@@ -28,6 +28,7 @@ public class HomePage extends Base {
 
     public void searchText(String textToSearch){
         waitElementStaleness(txtSearchBox);
+        clickElement(txtSearchBox);
         sendKeys(txtSearchBox, textToSearch, Keys.ENTER);
     }
 

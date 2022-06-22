@@ -20,8 +20,7 @@ public class SearchPageTest extends Base {
     @Test
     public void searchTest(){
         searchPage.checkSearchBoxText(textToSearch);
-        searchPage.areResultsEmpty(false);
-
+        searchPage.checkSuccessfulSearchPageElements();
     }
 
     @Test
@@ -38,7 +37,7 @@ public class SearchPageTest extends Base {
     @Test
     public void searchWithNoResultsTest(){
         searchPage.searchText("pqhxaxada");
-        searchPage.checkNoResultsPageElements();
+        searchPage.checkNoResultSearchPageElements();
     }
 
     @Test

@@ -43,8 +43,8 @@ public class SearchPage extends Base {
         sendKeys(txtSearchBox, textToSearch, Keys.ENTER);
     }
 
-    public void areResultsEmpty(boolean expected) {
-        Assert.assertEquals(getText(lblResultCount).isEmpty(), expected);
+    public void checkSuccessfulSearchPageElements() {
+        Assert.assertFalse(getText(lblResultCount).isEmpty());
         Assert.assertTrue(isElementFound(lblSearchResultTitle));
     }
 
@@ -76,7 +76,7 @@ public class SearchPage extends Base {
         Assert.assertEquals(getAttribute(txtSearchBox, "value").isEmpty(), expected);
     }
 
-    public void checkNoResultsPageElements(){
+    public void checkNoResultSearchPageElements(){
         Assert.assertFalse(isElementFound(lblResultCount), "Search displayed a result count when it was expected not to.");
         Assert.assertTrue(isElementFound(lblNoResults), "No results text was not found.");
         Assert.assertFalse(isElementFound(lblSearchResultTitle), "Search found a result title when there should have been no search results.");
