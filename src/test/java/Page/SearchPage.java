@@ -45,7 +45,7 @@ public class SearchPage extends Base {
 
     public void areResultsEmpty(boolean expected) {
         Assert.assertEquals(getText(lblResultCount).isEmpty(), expected);
-        Assert.assertTrue(isElementFound(lblSearchResultTitle), "Search found a result title when there should have been no search results.");
+        Assert.assertTrue(isElementFound(lblSearchResultTitle));
     }
 
     public void checkPageElements(){
@@ -60,7 +60,6 @@ public class SearchPage extends Base {
         Assert.assertTrue(isElementFound(btnMicrophone), "Microphone button was not found.");
         Assert.assertTrue(isElementFound(btnSearchByImage), "Search by image button was not found.");
         Assert.assertTrue(isElementFound(btnSearch), "Search button was not found.");
-        Assert.assertTrue(isElementFound(btnClearSearch), "Clear search button was not found.");
         Assert.assertTrue(isElementFound(lblResultCount), "Results count was not found.");
         Assert.assertTrue(isElementFound(lblDate), "Date filter was not found.");
         Assert.assertTrue(isElementFound(btnSignIn), "Sign in button was not found.");
@@ -69,6 +68,7 @@ public class SearchPage extends Base {
 
     public void clickClearSearchBoxButton(){
         clickElement(txtSearchBox);
+        Assert.assertTrue(isElementFound(btnClearSearch), "Clear search button was not found.");
         clickElement(btnClearSearch);
     }
 
