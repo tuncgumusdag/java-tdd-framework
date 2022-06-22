@@ -12,14 +12,4 @@ public class SearchPageTest extends Base {
 
         mainPage.searchText("Hello World");
     }
-
-    @Test
-    public void calculatorCountrySelection(){
-
-    }
-
-    @Test
-    public void calculatorDifferenceWithBankProviders(){
-
-    }
 }
