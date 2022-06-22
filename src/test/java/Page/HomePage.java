@@ -6,7 +6,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-public class MainPage extends Base {
+public class HomePage extends Base {
 
     protected By txtSearchBox = By.id("sb_form_q");
     protected By icoLogo = By.id("bLogo");
@@ -22,7 +22,7 @@ public class MainPage extends Base {
     protected By btnSearchByImage = By.xpath("//div[@class='camera icon ']");
     protected By btnSearch = By.id("search_icon");
 
-    public MainPage(WebDriver driver){
+    public HomePage(WebDriver driver){
         Base.driver = driver;
     }
 

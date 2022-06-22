@@ -1,26 +1,25 @@
 package Tests;
 
 import Base.Base;
-import Page.MainPage;
+import Page.HomePage;
 import Page.SearchPage;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class MainPageTest extends Base {
+public class HomePageTest extends Base {
 
-    MainPage mainPage = new MainPage(driver);
+    HomePage homePage = new HomePage(driver);
     SearchPage searchPage = new SearchPage(driver);
 
     @Test
     public void searchTest() {
         String textToSearch = "Hello World";
 
-        mainPage.searchText(textToSearch);
+        homePage.searchText(textToSearch);
         searchPage.checkSearchBoxText(textToSearch);
     }
 
     @Test
     public void checkPageElementsTest() {
-        mainPage.checkPageElements();
+        homePage.checkPageElements();
     }
 }
