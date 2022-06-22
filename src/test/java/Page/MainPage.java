@@ -19,7 +19,7 @@ public class MainPage extends Base {
     protected By btnAccount = By.id("id_a");
     protected By btnSettings = By.id("id_sc");
     protected By btnMicrophone = By.xpath("//div[@class='mic_cont icon']");
-    protected By btnCamera = By.xpath("//div[@class='camera icon ']");
+    protected By btnSearchByImage = By.xpath("//div[@class='camera icon ']");
     protected By btnSearch = By.id("search_icon");
 
     public MainPage(WebDriver driver){
@@ -45,7 +45,7 @@ public class MainPage extends Base {
         Assert.assertTrue(isElementFound(btnAccount), "Account tab was not found.");
         Assert.assertTrue(isElementFound(btnSettings), "Settings tab was not found.");
         Assert.assertTrue(isElementFound(btnMicrophone), "Microphone button found.");
-        Assert.assertTrue(isElementFound(btnCamera), "Camera button was not found.");
+        Assert.assertTrue(isElementFound(btnSearchByImage), "Search by image button was not found.");
         Assert.assertTrue(isElementFound(btnSearch), "Search button was not found.");
 
         sendKeys(txtSearchBox, textToCheck);

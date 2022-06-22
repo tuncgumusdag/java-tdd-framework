@@ -20,7 +20,7 @@ public class MainPageTest extends Base {
     }
 
     @Test
-    public void assertPageElementsTest() {
+    public void checkPageElementsTest() {
         mainPage.checkPageElements();
     }
 }
