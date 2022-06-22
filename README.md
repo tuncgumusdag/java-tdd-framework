@@ -2,4 +2,4 @@
 
 Test Automation framework using Selenium and TestNG.
 
-With some UI tests examples on Bing to show how it works.
+With some UI test examples on Bing to show how it works.
