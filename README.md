@@ -1,3 +1,3 @@
 # Test Automation Framework
 
-Test Automation framework using Selenium and TestNG to run UI tests with.
+Test Automation framework using Selenium and TestNG with UI test examples.
