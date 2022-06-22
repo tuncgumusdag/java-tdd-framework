@@ -60,7 +60,7 @@ public class SearchPage extends Base {
         Assert.assertTrue(isElementFound(btnMicrophone), "Microphone button was not found.");
         Assert.assertTrue(isElementFound(btnSearchByImage), "Search by image button was not found.");
         Assert.assertTrue(isElementFound(btnSearch), "Search button was not found.");
-        Assert.assertTrue(isElementFound(btnClearSearch), "Clear searc button was not found.");
+        Assert.assertTrue(isElementFound(btnClearSearch), "Clear search button was not found.");
         Assert.assertTrue(isElementFound(lblResultCount), "Results count was not found.");
         Assert.assertTrue(isElementFound(lblDate), "Date filter was not found.");
         Assert.assertTrue(isElementFound(btnSignIn), "Sign in button was not found.");
